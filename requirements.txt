@@ -1,0 +1,16 @@
+polars
+pandas
+numpy
+seaborn 
+matplotlib
+statsmodels
+scipy
+google-cloud
+google-cloud-bigquery
+google-cloud-storage
+geopandas
+shapely
+folium 
+contextily
+patsy
+pyyaml

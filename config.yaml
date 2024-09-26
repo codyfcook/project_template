@@ -1,0 +1,43 @@
+# Use in Python: 
+# import yaml
+# config = yaml.load(config_path, Loader=yaml.FullLoader)
+# Then access as a dictionary, e.g., config['bgrp_geos_table']
+
+# ----------------
+# DATA PATHS 
+# ----------------
+# For local paths, specify paths relative to directory head (e.g., 0_data/0_raw/test.csv)
+# Also track BigQuery tables and files in GCP buckets
+
+# Raw data
+# -----------
+
+
+# Clean data
+#-----------
+
+
+# Communal data
+# --------------
+# Shapefiles for various Census geographies table
+bgrp_geos_table: communal-data.geos.bgrp_2010
+trct_geos_table: communal-data.geos.trct_2010
+cty_geos_table: communal-data.geos.cty_2010
+msa_geos_table: communal-data.geos.msas_2010
+tz_geos_table: communal-data.geos.timezone
+zcta_geos_table: communal-data.geos.zcta
+
+# Raw Corelogic data
+cl_mortgages_table: communal-data.corelogic.mortgages_2022
+cl_ownertransfer_table: communal-data.corelogic.ownertransfer_2022
+cl_propertyhist_table: communal-data.corelogic.propertyhist_2022
+cl_propertybasic_table: communal-data.corelogic.propertybasic_2022
+cl_mls_table: communal-data.corelogic.mls_2022
+
+# ACS files 
+annual_trct_chars_table: model-housing.cendata.annual_trct_chars   # Table with tract-level characteristics from 2010-2019 from the ACS
+
+# ----------------
+# PARAMETERS
+# ----------------
+# Parameters for data cleaning (e.g., set start and end years)

@@ -1,0 +1,43 @@
+\documentclass[10pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsfonts, amsmath, amssymb, amsthm} % AMS Math Packages
+\usepackage{array, booktabs} % Extends the array and tabular environments
+\usepackage{environ} % Interface for environments
+\usepackage{parskip, setspace} % Paragraph indentation and line spacing
+\usepackage{color} % Color control
+\usepackage[x11names]{xcolor} % Color extensions 
+\usepackage{soul} % Letter spacing, underlining, striking out 
+\usepackage{hyperref} % Support for hypertext
+% \hypersetup{pdfborder=0 0 0, citebordercolor=Gray0, urlbordercolor=Gray0, linkbordercolor=Gray0}
+\usepackage[capitalise]{cleveref} % Better cross-referencing
+\usepackage{fancybox, fancyhdr} % Variations of fbox and header/footer controls
+\usepackage{tabularray} % Typeset tabulars and arrays with LaTeX3
+\usepackage{graphicx} % Enhanced support for graphics 
+\usepackage[shortlabels]{enumitem} % Control layout of itemize, enumerate, description
+\usepackage{tikz} % Graphics creation
+\usetikzlibrary{shapes.geometric} 
+
+\pagestyle{fancy}
+\setlength\parindent{0pt}
+
+\renewcommand{\baselinestretch}{1.25}
+\allowdisplaybreaks
+
+\lhead{}
+\chead{}
+\rhead{\emph{NOTES TEMPLATE}}
+
+\begin{document}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\section{Top Level Header}
+\subsection{Second Level Header}
+\begin{itemize}
+    \item This is the start of a bulleted list.
+    \item This is the second line.
+\end{itemize}
+
+
+\end{document}

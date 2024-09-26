@@ -1,0 +1,1 @@
+For storing files generated as part of the cleaning process, but that are not fully processed. It will often make sense to store such files in a BigQuery table instead of locally (especially if they are large or need to be linked to other files in BigQuery)
