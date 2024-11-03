@@ -27,17 +27,26 @@ msa_geos_table: communal-data.geos.msas_2010
 tz_geos_table: communal-data.geos.timezone
 zcta_geos_table: communal-data.geos.zcta
 
-# Raw Corelogic data
-cl_mortgages_table: communal-data.corelogic.mortgages_2022
-cl_ownertransfer_table: communal-data.corelogic.ownertransfer_2022
-cl_propertyhist_table: communal-data.corelogic.propertyhist_2022
-cl_propertybasic_table: communal-data.corelogic.propertybasic_2022
-cl_mls_table: communal-data.corelogic.mls_2022
-
-# ACS files 
-annual_trct_chars_table: model-housing.cendata.annual_trct_chars   # Table with tract-level characteristics from 2010-2019 from the ACS
 
 # ----------------
 # PARAMETERS
 # ----------------
 # Parameters for data cleaning (e.g., set start and end years)
+
+
+# -------------------
+# Stylistic settings
+# -------------------
+
+#colors: ['#2e7a9f', '#e76f51','#190b28',  '#ffd166', '#a8c69f', '#3a4f41', '#B22222'] # Blue-orange scheme
+#colors: ['#418cfc', '#F78764', '#ac3b80', '#136F63', '#330036', '#FFBA08']
+colors: ['#418cfc', '#D91677', '#330036', '#f78764', '#136F63', '#FFBA08'] # Blue-pink scheme
+#colors_seq: ['#001f2e', '#0a4d6e', '#2e799f', '#49a1cc']
+colors_seq: ['#081120', '#0d33a3', '#3f7efc', '#82bcff', '#b2dbf8']
+#colors: ['#418cfc', '#E02279', '#330036', '#136F63', '#FFBA08']
+colors_ordered: ['#FF5D38', '#AC3B80', '#2D3B6A', '#0F1A1E']
+ordered_palette: "ch:s=0.25,rot=-.25,gamma=1,light=0.75,dark=0.1"
+diverging_cmap: "sns.diverging_palette(255, 359, s=90, l=50, sep=1, n=6, center='light', as_cmap=True)"
+maps_cmap: "sns.color_palette('ch:s=.25,rot=-.25,gamma=1,light=0.9,dark=0.1', as_cmap=True)"
+graph_params: {'legend.fontsize': 'medium','axes.labelsize': 'medium','axes.titlesize':'large','xtick.labelsize':'medium','ytick.labelsize':'medium'}
+main_basemap: ctx.providers.CartoDB.Positron
