@@ -1,6 +1,6 @@
 # Use in Python: 
 # import yaml
-# config = yaml.load(config_path, Loader=yaml.FullLoader)
+# config = yaml.load(open(config_path), Loader=yaml.FullLoader)
 # Then access as a dictionary, e.g., config['bgrp_geos_table']
 
 # ----------------
