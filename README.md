@@ -15,7 +15,7 @@
 - In Python, use the config by running: 
 ```python
 import yaml 
-config = yaml.load(path_to_config, Loader=yaml.FullLoader)
+config = yaml.load(open(path_to_config), Loader=yaml.FullLoader)
 config['bgrp_geos_table'] # It acts as a dictionary
 ```
 - Use markdown files stored in `0_data/documentation` to document where data comes from and how it was cleaned 
