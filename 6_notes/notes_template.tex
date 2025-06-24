@@ -9,28 +9,23 @@
 \usepackage{soul} % Letter spacing, underlining, striking out 
 \usepackage{hyperref} % Support for hypertext
 % \hypersetup{pdfborder=0 0 0, citebordercolor=Gray0, urlbordercolor=Gray0, linkbordercolor=Gray0}
-\usepackage[capitalise]{cleveref} % Better cross-referencing
 \usepackage{fancybox, fancyhdr} % Variations of fbox and header/footer controls
 \usepackage{tabularray} % Typeset tabulars and arrays with LaTeX3
 \usepackage{graphicx} % Enhanced support for graphics 
 \usepackage[shortlabels]{enumitem} % Control layout of itemize, enumerate, description
-\usepackage{tikz} % Graphics creation
-\usetikzlibrary{shapes.geometric} 
 
-\pagestyle{fancy}
 \setlength\parindent{0pt}
 
 \renewcommand{\baselinestretch}{1.25}
 \allowdisplaybreaks
 
-\lhead{}
-\chead{}
-\rhead{\emph{NOTES TEMPLATE}}
+\title{TITLE}
+\author{NAME}
 
 \begin{document}
 
-\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
-\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\maketitle  
+
 
 \section{Top Level Header}
 \subsection{Second Level Header}
