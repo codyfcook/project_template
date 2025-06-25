@@ -7,12 +7,16 @@
 \usepackage{color} % Color control
 \usepackage[x11names]{xcolor} % Color extensions 
 \usepackage{soul} % Letter spacing, underlining, striking out 
-\usepackage{hyperref} % Support for hypertext
-% \hypersetup{pdfborder=0 0 0, citebordercolor=Gray0, urlbordercolor=Gray0, linkbordercolor=Gray0}
 \usepackage{fancybox, fancyhdr} % Variations of fbox and header/footer controls
 \usepackage{tabularray} % Typeset tabulars and arrays with LaTeX3
 \usepackage{graphicx} % Enhanced support for graphics 
-\usepackage[shortlabels]{enumitem} % Control layout of itemize, enumerate, description
+\usepackage{enumitem} % Control layout of itemize, enumerate, description
+\usepackage[position=top]{subcaption}
+\usepackage{placeins}
+\usepackage[colorlinks=true, linkcolor=blue, citecolor=blue]{hyperref}
+% \hypersetup{pdfborder=0 0 0, citebordercolor=Gray0, urlbordercolor=Gray0, linkbordercolor=Gray0}
+\usepackage[nameinlink]{cleveref}
+\newcommand{\orange}[1]{\textcolor{orange}{#1}}
 
 \setlength\parindent{0pt}
 
