@@ -1,11 +1,11 @@
 *.iml
 *.dirlock
 *.env
+*.venv
 *.geojson
 *.pyc
 *.egg-info/
 *~
-*.R
 *.DS_Store
 *.ipynb_checkpoints/
 *.idea/
@@ -22,7 +22,5 @@ env*/
 *.parquet
 *__pycache*
 **/*.lock
-*.log
-*.out
 service_account_creds.json
 .personal_access_token
