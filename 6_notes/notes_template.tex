@@ -3,7 +3,7 @@
 \usepackage{amsfonts, amsmath, amssymb, amsthm} % AMS Math Packages
 \usepackage{array, booktabs} % Extends the array and tabular environments
 \usepackage{environ} % Interface for environments
-\usepackage{parskip, setspace} % Paragraph indentation and line spacing
+\usepackage{setspace} % Paragraph indentation and line spacing
 \usepackage{color} % Color control
 \usepackage[x11names]{xcolor} % Color extensions 
 \usepackage{soul} % Letter spacing, underlining, striking out 
@@ -16,11 +16,25 @@
 \usepackage[colorlinks=true, linkcolor=blue, citecolor=blue]{hyperref}
 % \hypersetup{pdfborder=0 0 0, citebordercolor=Gray0, urlbordercolor=Gray0, linkbordercolor=Gray0}
 \usepackage[nameinlink]{cleveref}
+\usepackage[at]{easylist}
+\usepackage{enumitem}
+
+% Picture notes
+\newcommand{\Picnote}[1]{%
+\vspace{-0.7em}
+\flushleft
+\hspace{6pt}
+\hangindent=1.75em
+\scriptsize
+\emph{Notes:~}~#1
+}
+
+% Paragraph and itemize spacing
+\setlength{\parskip}{0.75em}
+\setlength{\parindent}{0pt}
+\setlist[itemize]{topsep=0pt, itemsep=0pt}
+
 \newcommand{\orange}[1]{\textcolor{orange}{#1}}
-
-\setlength\parindent{0pt}
-
-\renewcommand{\baselinestretch}{1.25}
 \allowdisplaybreaks
 
 \title{TITLE}
