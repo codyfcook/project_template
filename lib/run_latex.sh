@@ -21,9 +21,6 @@ run_latex() {
     
     # Clean up
     cleanup() {
-        if [ -f "${programname}.pdf" ]; then
-        mv "${programname}.pdf" "${OUTPUT_DIR}"
-        fi
         rm -f "${programname}.aux" \
               "${programname}.bbl" \
               "${programname}.blg" \

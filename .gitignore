@@ -21,6 +21,5 @@ env*/
 *.dta
 *.parquet
 *__pycache*
-**/*.lock
 service_account_creds.json
 .personal_access_token
