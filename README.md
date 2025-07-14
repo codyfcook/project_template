@@ -43,7 +43,12 @@
 A key goal is to ensure that all analyses are **portable** and **reproducible**, meaning they can be run from any computer and generate the same results. This comes with three key requirements: 1) everyone can run the same code from anywhere; 3) environments, including R/Python package versions, are the same everywhere; and 3) data files are the same everywhere. 
 
 ## Code management 
-We use Github to manage code. Data files should not be committed. Use the `.gitignore` to automatically exclude certain files or file types from being committed. 
+We use Github to manage code. Some best practices: 
+- Work within [branches](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-branches) and submit [pull requests](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests) when the changes are ready to be integrated into the main repository. Do not commit changes directly to the main repository. 
+- Data files should not be committed; see below.
+- Use the `.gitignore` to automatically exclude certain files or file types from being committed. 
+- Use issues on Github to discuss and review code. You can link commits to issues by including `#[issue number]` in the commit message. 
+
 
 ## Package management
 
