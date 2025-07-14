@@ -19,7 +19,7 @@ source "${REPO_ROOT}/lib/run_latex.sh"
     # Copy inputs to local directory
     rm -rf input
     mkdir -p input
-    find "${REPO_ROOT}/2_analysis/output/nyc_dogs" -type f -exec cp {} input/ \;
+    find "${REPO_ROOT}/2_analysis/example_submodule/output" -type f -exec cp {} input/ \;
 
     # Run programs in order
     run_latex nyc_dogs ${LOGFILE} .    

@@ -5,14 +5,13 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 
 PROJ_DIR = '/'.join(os.getcwd().partition('project_template')[0:2])
-DATA_DIR = os.path.join(PROJ_DIR, '1_data_prep/output/nyc_dogs')
-OUTPUT_DIR = os.path.join(PROJ_DIR, '2_analysis/output/nyc_dogs')
+DATA_DIR = os.path.join(PROJ_DIR, '1_data_prep/example_submodule/output')
+OUTPUT_DIR = os.path.join(PROJ_DIR, '2_analysis/example_submodule/output')
 
 # Use default plotting defaults from the config
 config = yaml.load(open(os.path.join(PROJ_DIR, 'config.yaml')), Loader=yaml.FullLoader)
 plt.rcParams.update(config['graph_params'])
 sns.set_palette(sns.color_palette(config['colors']))
-# Get the 10 most popular breeds and names by fraction of total (excluding 'Unknown')
 
 def filter_dogs(df):
     '''

@@ -1,6 +1,6 @@
 
-Script nyc_dogs.tex in latexmk -pdf -bibtex started at 2025-07-03 16:30:52
-Script nyc_dogs.tex finished successfully at 2025-07-03 16:30:54
+Script nyc_dogs.tex in latexmk -pdf -bibtex started at 2025-07-14 11:24:02
+Script nyc_dogs.tex finished successfully at 2025-07-14 11:24:05
 Output: Rc files read:
   NONE
 Latexmk: This is Latexmk, John Collins, 31 Jan. 2024. Version 4.83.
@@ -132,7 +132,7 @@ Package rerunfilecheck Warning: File `nyc_dogs.out' has changed.
 ></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><
 /usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></u
 sr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb>
-Output written on nyc_dogs.pdf (1 page, 66411 bytes).
+Output written on nyc_dogs.pdf (1 page, 66502 bytes).
 Transcript written on nyc_dogs.log.
 Latexmk: Getting log file 'nyc_dogs.log'
 Latexmk: Examining 'nyc_dogs.fls'
@@ -252,7 +252,7 @@ d_names.pdf>] (./nyc_dogs.aux) )</usr/local/texlive/2024/texmf-dist/fonts/type1
 /public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/p
 ublic/amsfonts/cm/cmr12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/pub
 lic/amsfonts/cm/cmr17.pfb>
-Output written on nyc_dogs.pdf (1 page, 56823 bytes).
+Output written on nyc_dogs.pdf (1 page, 56908 bytes).
 Transcript written on nyc_dogs.log.
 Latexmk: Getting log file 'nyc_dogs.log'
 Latexmk: Examining 'nyc_dogs.fls'

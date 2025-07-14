@@ -6,8 +6,8 @@ import polars as pl
 import os
 
 PROJ_DIR = '/'.join(os.getcwd().partition('project_template')[0:2])
-RAW_DIR = os.path.join(PROJ_DIR, '0_raw/nyc_dogs')
-OUTPUT_DIR = os.path.join(PROJ_DIR, '1_data_prep/output/nyc_dogs')
+RAW_DIR = os.path.join(PROJ_DIR, '0_raw/example_submodule')
+OUTPUT_DIR = os.path.join(PROJ_DIR, '1_data_prep/example_submodule/output')
 
 def main():
 
