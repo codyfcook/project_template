@@ -1,0 +1,3 @@
+# Analyses
+- Submodules should be used to break up the workflow into mostly-independent tasks. They can be named with numbered prefixes `1_` , `2_` if helpful for organization. They do not need to align with the same submodule names in `0_raw` or `1_data_prep`
+- Update the `run_all.sh` to make it clear what order files should be run in. Add notes in the comments if there are steps that are slow running
