@@ -79,7 +79,7 @@ dvc add file.csv]
 dvc push
 
 # Push the .dvc file that the above step creates so others can use it to pull the data from DVC
-git add `file.csv.dvc`
+git add file.csv.dvc
 git commit -m "New DVC-tracked file"
 git push 
 ```
