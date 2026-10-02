@@ -1,0 +1,66 @@
+\documentclass[11pt]{mybeamer}
+
+% Title block
+\title{\large TITLE }
+\author{Cody Cook}
+\date{\today}
+
+% Table of contents
+% Number sections in the TOC; use a custom indented format for
+% subsections (prefixed "section.subsection").
+\setbeamertemplate{section in toc}[sections numbered]
+\setbeamertemplate{subsection in toc}{\leavevmode\leftskip=3.2em\rlap{\hskip-2em\inserttocsectionnumber.\inserttocsubsectionnumber}\inserttocsubsection\par}
+% Show a plain TOC frame at the start of each section...
+\AtBeginSection[]{
+\begin{frame}[noframenumbering, plain]
+    \tableofcontents[currentsection]
+\end{frame}
+}
+% ...and each subsection.
+\AtBeginSubsection[]{
+\begin{frame}[noframenumbering, plain]
+    \tableofcontents[currentsection, currentsubsection]
+\end{frame}
+}
+
+% Other commands 
+\newcolumntype{L}[1]{>{\raggedright\arraybackslash}p{#1}}
+\newcolumntype{R}[1]{>{\raggedleft\arraybackslash}p{#1}}
+\newcolumntype{C}[1]{>{\centering\arraybackslash}p{#1}}
+
+% reveal timing for columns
+\newcommand{\cc}[1]{\leavevmode\uncover<2->{#1}}
+\newcommand{\ccc}[1]{\leavevmode\uncover<3->{#1}}
+
+% -----------------
+% DOCUMENT 
+% -----------------
+\begin{document}
+
+% Title page
+\begin{frame}[plain,noframenumbering]
+    \titlepage
+\end{frame}
+
+\begin{frame}{Blocks}
+    \bl{Simple block}{Simple block text}
+    
+    \begin{tboxblue}
+        \large Block block block 
+        \citet{cook2021gender}
+    \end{tboxblue}
+\end{frame}
+
+
+% -------------------
+% APPENDIX
+% -------------------
+\appendix
+\renewcommand{\bibsection}{}
+\begin{frame}[allowframebreaks]{References}
+  \bibliographystyle{../myaea}
+    \bibliography{../cites}
+\end{frame}
+
+
+\end{document}
