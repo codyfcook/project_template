@@ -33,7 +33,7 @@
 
 **Organizing**
 
-- Within a module (e.g., `1_data_prep`), files should be further organized into `submodules` that roughly correspond to a "task." For example, for some traffic analyses we might make a set of folders `0_raw/traffic`, `1_data_prep/traffic/`, `1_data_prep/traffic/`, etc.
+- Within a module (e.g., `1_data_prep`), files should be further organized into `submodules` that roughly correspond to a "task." For example, for some traffic analyses we might make a set of folders `0_raw/traffic`, `1_data_prep/traffic/`, `2_analyses/traffic/`, etc.
     - Save cleaned data to `1_data_prep/[submodule]/output` and cleaned analyses to `2_analysis/[submodule]/output`. 
 - Keep `run_all.sh` up to date -- while it is rare we will want to run everything in a folder start to finish, it helps serve as documentation for the order code should be run in. 
 - Code should _not_ directly save to `input/` in of the slides, paper, or notes folders, and `.tex` files should _not_ directly reference files in any `output/` folder. Instead, copy the needed output over to an `input/` folder within the corresponding document's folder. Ideally, the copying step should be part of the `make.sh` file in the document's folder.
